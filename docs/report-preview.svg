@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">RSNAP integrated RNA-seq report preview</title>
+  <desc id="desc">Preview of the HTML report with quality control, assembly, differential expression and functional annotation sections.</desc>
+  <rect width="1200" height="760" fill="#f4f7fb"/>
+  <rect x="40" y="34" width="1120" height="692" rx="16" fill="#ffffff" stroke="#d6deea"/>
+  <rect x="40" y="34" width="1120" height="76" rx="16" fill="#17324d"/>
+  <rect x="40" y="92" width="1120" height="18" fill="#17324d"/>
+  <text x="76" y="82" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">RSNAP · RNA-seq analysis report</text>
+  <text x="76" y="145" font-family="Arial, sans-serif" font-size="18" fill="#516273">Integrated output from quality control to functional annotation</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="76" y="184" width="246" height="132" rx="12" fill="#e9f5ef"/>
+    <text x="98" y="218" font-size="17" font-weight="700" fill="#20643d">Quality control</text>
+    <text x="98" y="254" font-size="31" font-weight="700" fill="#17324d">Q30 0.98</text>
+    <text x="98" y="282" font-size="15" fill="#516273">FastQC · trimming · status</text>
+
+    <rect x="348" y="184" width="246" height="132" rx="12" fill="#edf1fb"/>
+    <text x="370" y="218" font-size="17" font-weight="700" fill="#324d9b">De novo assembly</text>
+    <text x="370" y="254" font-size="31" font-weight="700" fill="#17324d">24,174</text>
+    <text x="370" y="282" font-size="15" fill="#516273">assembled transcripts</text>
+
+    <rect x="620" y="184" width="246" height="132" rx="12" fill="#fff3df"/>
+    <text x="642" y="218" font-size="17" font-weight="700" fill="#99641c">Differential expression</text>
+    <text x="642" y="254" font-size="31" font-weight="700" fill="#17324d">1,143</text>
+    <text x="642" y="282" font-size="15" fill="#516273">significant genes</text>
+
+    <rect x="892" y="184" width="232" height="132" rx="12" fill="#f3eafb"/>
+    <text x="914" y="218" font-size="17" font-weight="700" fill="#704198">Annotation</text>
+    <text x="914" y="254" font-size="31" font-weight="700" fill="#17324d">GO / pathway</text>
+    <text x="914" y="282" font-size="15" fill="#516273">tables and plots</text>
+  </g>
+
+  <rect x="76" y="350" width="1048" height="322" rx="12" fill="#fbfcfe" stroke="#e0e7f0"/>
+  <text x="100" y="390" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#17324d">Pipeline result sections</text>
+  <g font-family="Arial, sans-serif" font-size="16" fill="#516273">
+    <text x="108" y="438">01</text><text x="160" y="438" fill="#17324d" font-weight="700">QC Output</text><text x="410" y="438">Q20/Q30, GC-related metrics and trimming summary</text>
+    <text x="108" y="484">02</text><text x="160" y="484" fill="#17324d" font-weight="700">Assembly Output</text><text x="410" y="484">Trinity assembly statistics and output links</text>
+    <text x="108" y="530">03</text><text x="160" y="530" fill="#17324d" font-weight="700">Expression Output</text><text x="410" y="530">RSEM count matrix for downstream analysis</text>
+    <text x="108" y="576">04</text><text x="160" y="576" fill="#17324d" font-weight="700">DEG Output</text><text x="410" y="576">edgeR/DESeq2 tables, clustering and volcano plots</text>
+    <text x="108" y="622">05</text><text x="160" y="622" fill="#17324d" font-weight="700">Annotation Output</text><text x="410" y="622">BLASTX, UniProt, GO and pathway enrichment</text>
+  </g>
+  <text x="76" y="704" font-family="Arial, sans-serif" font-size="13" fill="#7a8998">Preview based on the archived RSNAP example run · generated for project documentation</text>
+</svg>
