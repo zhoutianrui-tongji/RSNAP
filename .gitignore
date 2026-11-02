@@ -1,0 +1,53 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# IDE and OS files
+.idea/
+_idea/
+.DS_Store
+
+# Local configuration/state and logs
+*.pkl
+*.log
+nohup.out
+
+# Sequencing data and large reference files
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.fasta
+*.fasta.gz
+*.fa
+*.fa.gz
+*.summary
+*.tar.gz
+*.zip
+*.rar
+
+# Generated pipeline outputs and temporary databases
+RSNAP_out/
+RSNAP_out_new/
+**/qc_fastqc_output/
+**/assemble_trinity_output/
+**/expression_rsem_output/
+**/transcript_indentification_output/
+**/*DEG_identification_output/
+**/*feature_annotation_analysis_output/
+**/blastdb/
+*.bt2
+*.bt2l
+*.nhr
+*.nin
+*.nsq
+*.phr
+*.pin
+*.psq
+
+# Temporary analysis files
+*.tmp
+*.swp
