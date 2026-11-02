@@ -6,15 +6,19 @@ It integrates quality control, read trimming, transcriptome assembly, expression
 
 ## Pipeline
 
-```text
-FASTQ reads
-  -> FastQC + Trimmomatic
-  -> Trinity de novo assembly
-  -> RSEM expression quantification
-  -> edgeR / DESeq2 differential expression
-  -> BLASTX + UniProt transcript identification
-  -> GO / pathway annotation and enrichment
-  -> integrated HTML report
+```mermaid
+flowchart LR
+    A[FASTQ reads] --> B[FastQC + Trimmomatic]
+    B --> C[Trinity de novo assembly]
+    C --> D[RSEM quantification]
+    D --> E[edgeR / DESeq2]
+    C --> F[BLASTX + UniProt]
+    E --> G[GO / pathway enrichment]
+    F --> G
+    B --> H[Integrated HTML report]
+    D --> H
+    E --> H
+    G --> H
 ```
 
 The module relationships are shown in [`docs/architecture.md`](docs/architecture.md).
@@ -84,4 +88,5 @@ This project was developed manually in 2023, before the current wave of AI-assis
 python -m compileall script tests
 python -m unittest discover -s tests -v
 ```
+
 
