@@ -1,0 +1,8 @@
+click
+gseapy
+jinja2
+matplotlib
+numpy
+pandas
+requests
+rpy2
