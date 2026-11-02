@@ -19,6 +19,8 @@ FASTQ reads
 
 The module relationships are shown in [`docs/architecture.md`](docs/architecture.md).
 
+![RSNAP integrated report preview](docs/report-preview.svg)
+
 ## Main capabilities
 
 - Configuration-driven sample groups, sequencing layout, output paths, and analysis thresholds.
@@ -65,6 +67,8 @@ The lightweight checks in [`tests/`](tests/) validate source syntax and configur
 The local project archive contains an HTML report from a complete analysis run with quality-control summaries, Trinity assembly statistics, expression quantification, differential expression results, BLASTX identification, and functional annotation plots. Generated datasets and reports are kept outside the source repository because they are large and dataset-specific.
 
 The example run reported 12,992 assembled genes, 24,174 transcripts, and 1,143 significant differentially expressed genes under the configured thresholds. These values belong to the archived example dataset and are not universal pipeline benchmarks.
+
+The project-focused Chinese and English resume descriptions are available in [`docs/career-summary.md`](docs/career-summary.md).
 
 ## Project contribution
 
