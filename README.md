@@ -17,6 +17,8 @@ FASTQ reads
   -> integrated HTML report
 ```
 
+The module relationships are shown in [`docs/architecture.md`](docs/architecture.md).
+
 ## Main capabilities
 
 - Configuration-driven sample groups, sequencing layout, output paths, and analysis thresholds.
@@ -46,13 +48,17 @@ The maintained pipeline modules are under [`script/`](script/). The repository a
 
 ## Example run
 
-The workflow is configured through `script/config.py`, including sample paths and group assignments. A typical run is launched from the directory containing the pipeline modules:
+Copy [`examples/config.example.py`](examples/config.example.py) to a working directory, replace the sample paths and groups, and run the pipeline from the `script/` directory:
 
 ```bash
-python RSNAP.py --config config.py --check
+cp examples/config.example.py config.py
+cd script
+python RSNAP.py --config ../config.py --check
 ```
 
 The complete workflow requires external bioinformatics software, including FastQC, Trimmomatic, Trinity, RSEM/Bowtie2, BLAST+, R, and the required R/Python packages. UniProt annotation retrieval also requires network access.
+
+The lightweight checks in [`tests/`](tests/) validate source syntax and configuration structure without running the external bioinformatics programs.
 
 ## Example output
 
@@ -68,4 +74,10 @@ The main contribution is workflow engineering: turning a multi-tool de novo tran
 
 This project was developed manually in 2023, before the current wave of AI-assisted coding tools. The dated folders and development documents are intentionally retained as part of the project history.
 
+## Development checks
+
+```bash
+python -m compileall script tests
+python -m unittest discover -s tests -v
+```
 
